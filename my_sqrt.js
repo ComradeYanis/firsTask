@@ -18,7 +18,7 @@ class my_sqrt{
 
 	complete_sqrt(){
 		var a = Math.pow(10, this.number_after_the_comma);
-		var ready = this.formula(this.number, 1/a);
+		var ready = thissformula(this.number, 1/a);
 		return(parseFloat(Math.round(ready * a)/a));
 	}	
 } 
