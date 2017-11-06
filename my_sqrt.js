@@ -32,12 +32,14 @@ class fridays{
 	complete_col(){
 		var year = this.start_number;
 		var column_friday = 0;
-		for(year; year <= this.end_number; year++)
-			for(var month = 1; month <=12; month++){
-				var date = new Date(13,month,year);  // 3 января 2012
-				if(date.getDay() == 6)
-					column_friday++;
-			}
+		for(year; year <= this.end_number; year++){
+				if(year % 4 == 0 && year % 100 !=0 || year % 400 == 0)
+					for(var month = 1; month <=12; month++){
+						var date = new Date(13,month,year);  // dd/mm/yy
+						if(date.getDay() == 6)
+						column_friday++;
+					}
+		}
 		return column_friday;
 	}
 }
