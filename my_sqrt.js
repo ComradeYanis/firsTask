@@ -36,7 +36,7 @@ class fridays{
 				if(year % 4 == 0 && year % 100 !=0 || year % 400 == 0)
 					for(var month = 1; month <=12; month++){
 						var date = new Date(13,month,year);  // dd/mm/yy
-						if(date.getDay() == 6)
+						if(date.getDay() == 5)
 						column_friday++;
 					}
 		}
